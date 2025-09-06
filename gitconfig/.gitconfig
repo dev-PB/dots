@@ -1,0 +1,28 @@
+[include]
+    # User & machine specific configs
+    path = ~/.gitconfig.local
+[core]
+    editor = hx
+[commit]
+	verbose = true
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[merge]
+    conflictstyle = zdiff3
+[diff]
+	algorithm = histogram
+	renames = true
+	mnemonicPrefix = true
+	colorMoved = dimmed-zebra
+[column]
+	ui = auto
+[tag]
+	sort = version:refname
+[rerere]
+	enabled = true
+[alias]
+	plog = log --format='%Cgreen%cn%Creset - %Cblue%aD (%ar)%Creset%n%s%n%b' --graph
+	leaderboard = shortlog --summary --numbered --all --no-merges
+	discard = reset HEAD --hard
