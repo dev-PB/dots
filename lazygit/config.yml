@@ -1,0 +1,26 @@
+notARepository: skip
+
+gui:
+  nerdFontsVersion: 3
+  expandFocusedSidePanel: true
+  expandedSidePanelWeight: 2.5
+  switchTabsWithPanelJumpKeys: true
+  enlargedSideViewLocation: top
+  commandLogSize: 4
+  commitHashLength: 4
+  statusPanelView: allBranchesLog
+  showNumstatInFilesView: true
+  shortTimeFormat: 15:04
+  commitAuthorLongLength: 14
+  border: 'single'
+  useHunkModeInStagingView: true
+  showCommandLog: false
+  useHunkModeInStagingView: true
+  mainPanelSplitMode: 'vertical'
+
+  theme:
+    selectedLineBgColor:
+      - "#223249"
+      - bold
+os:
+  editPreset: 'helix (hx)'
