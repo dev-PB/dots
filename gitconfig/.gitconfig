@@ -1,28 +1,36 @@
 [include]
     # User & machine specific configs
     path = ~/.gitconfig.local
+    # Themes for Delta
+    path = ~/themes.gitconfig
 [core]
     editor = hx
+    pager = delta
 [commit]
-	verbose = true
+    verbose = true
 [pull]
-	rebase = true
+    rebase = true
 [fetch]
-	prune = true
+    prune = true
 [merge]
     conflictstyle = zdiff3
 [diff]
-	algorithm = histogram
-	renames = true
-	mnemonicPrefix = true
-	colorMoved = dimmed-zebra
+    algorithm = histogram
+    renames = true
+    mnemonicPrefix = true
+    colorMoved = dimmed-zebra
 [column]
-	ui = auto
+    ui = auto
 [tag]
-	sort = version:refname
+    sort = version:refname
 [rerere]
-	enabled = true
+    enabled = false
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    dark = true
+    syntax-theme = Visual Studio Dark+
 [alias]
-	plog = log --format='%Cgreen%cn%Creset - %Cblue%aD (%ar)%Creset%n%s%n%b' --graph
-	leaderboard = shortlog --summary --numbered --all --no-merges
-	discard = reset HEAD --hard
+    plog = log --format='%Cgreen%cn%Creset - %Cblue%aD (%ar)%Creset%n%s%n%b' --graph
+    leaderboard = shortlog --summary --numbered --all --no-merges
+    discard = reset HEAD --hard

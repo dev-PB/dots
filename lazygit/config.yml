@@ -4,7 +4,7 @@ gui:
   nerdFontsVersion: 3
   expandFocusedSidePanel: true
   expandedSidePanelWeight: 2.5
-  switchTabsWithPanelJumpKeys: true
+  # switchTabsWithPanelJumpKeys: true
   enlargedSideViewLocation: top
   commandLogSize: 4
   commitHashLength: 4
@@ -12,15 +12,16 @@ gui:
   showNumstatInFilesView: true
   shortTimeFormat: 15:04
   commitAuthorLongLength: 14
-  border: 'single'
+  # showCommandLog: false
   useHunkModeInStagingView: true
-  showCommandLog: false
-  useHunkModeInStagingView: true
-  mainPanelSplitMode: 'vertical'
 
   theme:
     selectedLineBgColor:
       - "#223249"
       - bold
 os:
-  editPreset: 'helix (hx)'
+  editPreset: "helix (hx)"
+
+git:
+  paging:
+    externalDiffCommand: '"C:\Scripts\lazygit-delta-workaround.bat"'
