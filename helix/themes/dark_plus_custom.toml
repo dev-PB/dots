@@ -1,0 +1,13 @@
+inherits = "dark_plus"
+
+"ui.statusline" = { bg = "background_darker"}
+"ui.statusline.normal" = { fg = "white", bg = "blue"}
+"ui.statusline.insert" = { fg = "white", bg = "dark_green"}
+
+"ui.bufferline" = { fg = "text", bg = "background_darker"}
+"ui.bufferline.active" = { fg = "white", bg = "background"}
+"ui.bufferline.background" = { bg = "background_darker" }
+
+[palette]
+background_darker = "#181818"
+

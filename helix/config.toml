@@ -1,0 +1,46 @@
+theme = "kanagawa_custom"
+
+[editor]
+rulers = [100]
+trim-trailing-whitespace = true
+end-of-line-diagnostics = "hint"
+completion-trigger-len = 1
+completion-timeout = 5
+color-modes = true
+bufferline = "always"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "underline"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.indent-guides]
+render = true
+character = "▏"
+
+[editor.soft-wrap]
+enable = false
+wrap-at-text-width = true
+
+[editor.statusline.mode]
+normal = "NORMAL"
+insert = "INSERT"
+select = "SELECT"
+
+[keys.normal]
+"ret" = "goto_word"
+C-s = ":u"
+
+[keys.normal.space]
+q = ":bc"
+Q.a = ":bca"
+Q.o = ":bco"
+
+[keys.select]
+"ret" = "extend_to_word"
+
+[keys.insert]
+C-backspace = "delete_word_backward"
