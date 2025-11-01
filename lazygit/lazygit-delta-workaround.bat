@@ -8,4 +8,4 @@ set "new=%new:\=/%"
 
 git --no-pager diff --no-index --no-ext-diff "%old%" "%new%"^
  | sd "%old%" "%target%"^ | sd "%new%" "%target%"^
- | delta --paging=never
+ | delta --paging=never --width=%LAZYGIT_COLUMNS%
