@@ -1,0 +1,4 @@
+inherits = "kanagawa_custom"
+
+"ui.background" = {}
+"ui.gutter" = { }
