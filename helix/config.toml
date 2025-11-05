@@ -1,4 +1,4 @@
-theme = "kanagawa_custom"
+theme = "nightfox"
 
 [editor]
 rulers = [100]
@@ -10,6 +10,7 @@ color-modes = false
 bufferline = "always"
 popup-border = "all"
 cursorline = true
+scrolloff = 10
 
 [editor.cursor-shape]
 normal = "block"
@@ -21,34 +22,36 @@ cursor-line = "warning"
 
 [editor.indent-guides]
 render = true
-character = "▏"
+character = "┊"
 
 [editor.soft-wrap]
 enable = false
 wrap-at-text-width = true
 wrap-indicator = ""
 
-[editor.statusline.mode]
-normal = "NORMAL"
-insert = "INSERT"
-select = "SELECT"
+[editor.statusline]
+diagnostics = ["info", "warning", "error"]
+
+[editor.whitespace.render]
+tab = "all"
+nbsp = "all"
+nnbsp = "all"
+space = "none"
+newline = "none"
 
 [keys.normal]
 "ret" = "goto_word"
 C-s = ":u"
-C-c = "no_op"
 
 [keys.normal.space]
 q = ":bc"
 Q.a = ":bca"
 Q.o = ":bco"
-x = ":config-reload"
-X = ":config-open"
 
 [keys.select]
 "ret" = "extend_to_word"
-C-c = "normal_mode"
+"C-[" = "normal_mode"
 
 [keys.insert]
 C-backspace = "delete_word_backward"
-C-c = "normal_mode"
+"C-[" = "normal_mode"
