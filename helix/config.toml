@@ -1,4 +1,4 @@
-theme = "nightfox"
+theme = "dark_plus_custom"
 
 [editor]
 rulers = [100]
@@ -22,7 +22,6 @@ cursor-line = "warning"
 
 [editor.indent-guides]
 render = true
-character = "┊"
 
 [editor.soft-wrap]
 enable = false
@@ -38,6 +37,9 @@ nbsp = "all"
 nnbsp = "all"
 space = "none"
 newline = "none"
+
+[editor.lsp]
+display-progress-messages = true
 
 [keys.normal]
 "ret" = "goto_word"
