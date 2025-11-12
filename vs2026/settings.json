@@ -1,0 +1,19 @@
+/* Visual Studio Settings File */
+{
+  "debugging.general.enableAspNetJavaScriptDebuggingOnLaunch": true,
+  "debugging.outputWindow.wpfTraceSettings.dataBinding": "Warning",
+  "environment.documents.showMiscFileProject": true,
+  "environment.tabs.documentTabs.boldSelectedTabs": false,
+  "environment.tabs.documentTabs.colorization": "project",
+  "environment.tabs.previewTab.singleClickPreviewInSolutionExplorer": false,
+  "environment.visualExperience.colorTheme": "moonlight-glow",
+  "environment.visualExperience.hideCopilotBadge": true,
+  "environment.windows.toolWindows.showAutoHiddenWindowsOnHover": true,
+  "textEditor.advanced.defaultCompletionMode": "tabOnly",
+  "textEditor.advanced.textFormatting": "ideal",
+  "textEditor.codeCleanup.profile": "profile1",
+  "textEditor.general.display.autoBraceSurround": true,
+  "textEditor.general.display.bracePairColorization": true,
+  "textEditor.general.display.zeroWidthCharacters": true,
+  "xamlDesigner.general.splitOrientation": "vertical"
+}
