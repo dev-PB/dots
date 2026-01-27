@@ -8,6 +8,13 @@ inherits = "dark_plus"
 "ui.bufferline.active" = { fg = "white", bg = "background"}
 "ui.bufferline.background" = { bg = "background_darker" }
 
-[palette]
+"markup.heading" = {}
+"markup.heading.1" = { fg = "#46D9FF", bg = "#11313B" }
+"markup.heading.2" = { fg = "#C678DD", bg = "#2D2233" }
+"markup.heading.3" = { fg = "#98BE65", bg = "#253027" }
+"markup.heading.4" = { fg = "#A8A1E1", bg = "#2A2738" }
+"markup.heading.5" = { fg = "#ECBE7B", bg = "#3A3223" }
+"markup.heading.6" = { fg = "#46D9FF", bg = "#1E2A30" }
+
 background_darker = "#181818"
 

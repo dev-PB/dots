@@ -1,4 +1,4 @@
-theme = "dark_plus_custom"
+theme = "kanagawa_custom"
 
 [editor]
 rulers = [100]
@@ -8,9 +8,9 @@ completion-trigger-len = 1
 completion-timeout = 5
 color-modes = false
 bufferline = "always"
-popup-border = "all"
+popup-border = "none"
 cursorline = true
-scrolloff = 10
+scrolloff = 5
 
 [editor.cursor-shape]
 normal = "block"
@@ -44,9 +44,9 @@ display-progress-messages = true
 [keys.normal]
 "ret" = "goto_word"
 C-s = ":u"
+C-q = ":bc"
 
 [keys.normal.space]
-q = ":bc"
 Q.a = ":bca"
 Q.o = ":bco"
 
@@ -56,4 +56,5 @@ Q.o = ":bco"
 
 [keys.insert]
 C-backspace = "delete_word_backward"
-"C-[" = "normal_mode"
+# "C-[" = "normal_mode"
+j.k = "normal_mode"

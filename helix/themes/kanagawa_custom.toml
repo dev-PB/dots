@@ -1,5 +1,9 @@
 inherits = "kanagawa"
 
 "keyword" = { fg = "oniViolet"}
-"ui.gutter" = { bg = "sumiInk3" }
+
+"ui.gutter" = { bg = "sumiInk0" }
+"ui.bufferline.active" = { fg = "oldWhite", bg = "sumiInk3"}
+
 "markup.list.checked" = { fg = "sakuraPink", modifiers = ["crossed_out"] }
+"markup.heading.marker" = "waveRed"
