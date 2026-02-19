@@ -6,8 +6,8 @@ trim-trailing-whitespace = true
 end-of-line-diagnostics = "hint"
 completion-trigger-len = 1
 completion-timeout = 5
-color-modes = false
-bufferline = "always"
+color-modes = true
+bufferline = "multiple"
 popup-border = "none"
 cursorline = true
 scrolloff = 5
@@ -41,6 +41,7 @@ newline = "none"
 [editor.lsp]
 display-progress-messages = true
 
+
 [keys.normal]
 "ret" = "goto_word"
 C-s = ":u"
@@ -56,5 +57,15 @@ Q.o = ":bco"
 
 [keys.insert]
 C-backspace = "delete_word_backward"
-# "C-[" = "normal_mode"
-j.k = "normal_mode"
+"C-[" = "normal_mode"
+
+# Option toggles
+[keys.normal.space.o]
+i = ":toggle-option lsp.display-inlay-hints"
+
+# Macros
+[keys.normal.space.m]
+# Markdown - check/uncheck checkboxes in lines within selection
+c = "@Xs[*|\\-|+] \\[[ |-]\\]<ret>mi]rx,<C-o>"
+C = "@Xs[*|\\-|+] \\[[x|X|-]\\]<ret>mi]r ,<C-o>"
+A-c = "@Xs[*|\\-|+] \\[[ |x|X]\\]<ret>mi]r-,<C-o>"
